@@ -1,0 +1,8 @@
+---
+- name: Install Editors
+  become: yes
+  community.general.snap:
+    name: 
+      - code
+      - intellij-idea-community
+    classic: yes

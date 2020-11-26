@@ -1,0 +1,6 @@
+---
+- name: Install Spotify
+  become: yes
+  community.general.snap:
+    name: 
+      - spotify

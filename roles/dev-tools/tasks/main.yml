@@ -1,0 +1,6 @@
+---
+- name: Setup Utilities
+  import_tasks: utilities.yml
+
+- name: Setup Editors
+  import_tasks: editors.yml

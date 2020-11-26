@@ -1,0 +1,7 @@
+---
+- name: Install Utilities
+  become: yes
+  package:
+    name:
+      - git
+    state: latest

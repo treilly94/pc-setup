@@ -1,0 +1,6 @@
+---
+- name: Setup SSH
+  import_tasks: ssh.yml
+
+- name: Setup Git
+  import_tasks: git.yml

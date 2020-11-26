@@ -1,0 +1,6 @@
+---
+- name: Setup Spotify
+  import_tasks: spotify.yml
+
+- name: Setup VLC
+  import_tasks: vlc.yml

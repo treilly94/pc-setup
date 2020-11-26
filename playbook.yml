@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  roles:
+    - role: user
+      vars:
+        name: tom
+        email: treilly94@live.com
+    - role: dev-tools
+    - role: games
+    - role: media
+    - role: cleanup

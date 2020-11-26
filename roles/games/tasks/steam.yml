@@ -1,0 +1,4 @@
+- name: Install Steam
+  become: yes
+  apt:
+    deb: https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
