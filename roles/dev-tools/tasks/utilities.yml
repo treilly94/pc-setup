@@ -4,6 +4,7 @@
   package:
     name:
       - git
+      - make
     state: latest
 
 - name: Install Utilities from deb

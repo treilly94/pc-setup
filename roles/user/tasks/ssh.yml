@@ -1,4 +1,9 @@
 ---
+- name: Make SSH Directory
+  file:
+    path: ~/.ssh
+    state: directory
+
 - name: Generate an OpenSSH keypair
   become_user: "{{ name }}"
   community.crypto.openssh_keypair:

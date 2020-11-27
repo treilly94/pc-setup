@@ -1,8 +1,10 @@
 ---
 - name: Make Games Directory
+  become: yes
   file:
     path: /home/games
     state: directory
+
 - name: Mount Games Disk
   become: yes
   mount:
