@@ -7,3 +7,4 @@
   loop: 
     - { key: user.name, value: "{{ name }}" }
     - { key: user.email, value: "{{ email }}" }
+    - { key: commit.gpgsign, value: true }
