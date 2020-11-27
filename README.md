@@ -1,11 +1,14 @@
+## Install Homebrew
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
 ## Install Pyenv
-`curl https://pyenv.run | bash`
+`brew install pyenv`
 
 ## Install Pipenv
-`sudo apt install pipenv`
+`brew install pipenv`
 
 ## Install ansible roles
 `ansible-galaxy install -r requirements.yml`
 
 ## Run Playbook
-`ansible-playbook -i inventory -K playbook.yml`
+`ansible-playbook -K playbook.yml`
