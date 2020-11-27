@@ -1,0 +1,12 @@
+---
+- name: Make Games Directory
+  file:
+    path: /home/games
+    state: directory
+- name: Mount Games Disk
+  become: yes
+  mount:
+    path: /home/games
+    src: LABEL=games
+    fstype: ntfs
+    state: present

@@ -1,2 +1,6 @@
+---
 - name: Setup Steam
   import_tasks: steam.yml
+
+- name: Games Disk
+  import_tasks: disk.yml
