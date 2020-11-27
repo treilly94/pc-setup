@@ -5,3 +5,10 @@
     name:
       - git
     state: latest
+
+- name: Install Utilities from deb
+  become: yes
+  apt:
+    deb: "{{ item }}"
+  loop:
+    - https://prerelease.keybase.io/keybase_amd64.deb
