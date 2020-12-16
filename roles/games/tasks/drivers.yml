@@ -1,0 +1,9 @@
+---
+# Use the below command to find the recomended driver
+# ubuntu-drivers devices
+- name: Install nividia driver
+  become: yes
+  package:
+    name:
+      - nvidia-driver-455
+    state: latest

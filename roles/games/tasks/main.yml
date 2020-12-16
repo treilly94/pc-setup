@@ -1,4 +1,7 @@
 ---
+- name: Install Drivers
+  import_tasks: drivers.yml
+
 - name: Setup Steam
   import_tasks: steam.yml
 
