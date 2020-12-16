@@ -4,3 +4,6 @@
 
 - name: Setup Git
   import_tasks: git.yml
+
+- name: Setup Bash
+  import_tasks: bash.yml
