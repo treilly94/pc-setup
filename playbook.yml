@@ -7,8 +7,8 @@
       vars:
         name: tom
         email: treilly94@live.com
-    - role: dev-tools
-    - role: security-tools
+    - role: dev_tools
+    - role: security_tools
     - role: games
     - role: media
     - role: cleanup
