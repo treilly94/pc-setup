@@ -1,0 +1,8 @@
+---
+- name: Install Scanning Software
+  become: yes
+  package:
+    name:
+      - nmap
+      - wireshark
+    state: latest

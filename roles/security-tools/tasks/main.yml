@@ -1,0 +1,6 @@
+---
+- name: Setup Scanning Tools
+  import_tasks: scanning.yml
+
+- name: Setup Password Tools
+  import_tasks: password.yml
