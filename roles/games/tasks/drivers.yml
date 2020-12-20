@@ -6,4 +6,4 @@
   package:
     name:
       - nvidia-driver-455
-    state: latest
+    state: present

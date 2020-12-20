@@ -5,4 +5,4 @@
     name:
       - nmap
       - wireshark
-    state: latest
+    state: present

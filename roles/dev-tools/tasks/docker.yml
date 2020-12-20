@@ -18,7 +18,7 @@
       - docker-ce
       - docker-ce-cli
       - containerd.io
-    state: latest
+    state: present
 
 - name: Add User to Docker Group
   become: true
