@@ -2,7 +2,7 @@
 - name: Install Editors
   become: yes
   community.general.snap:
-    name: 
+    name:
       - code
       - intellij-idea-community
     classic: yes

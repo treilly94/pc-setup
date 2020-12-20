@@ -2,5 +2,5 @@
 - name: Install VLC
   become: yes
   community.general.snap:
-    name: 
+    name:
       - vlc

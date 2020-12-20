@@ -4,7 +4,7 @@
     name: "{{ item.key }}"
     scope: global
     value: "{{ item.value }}"
-  loop: 
+  loop:
     - { key: user.name, value: "{{ name }}" }
     - { key: user.email, value: "{{ email }}" }
     - { key: commit.gpgsign, value: true }
