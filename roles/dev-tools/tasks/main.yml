@@ -4,3 +4,6 @@
 
 - name: Setup Editors
   import_tasks: editors.yml
+
+- name: Setup Docker
+  import_tasks: docker.yml
