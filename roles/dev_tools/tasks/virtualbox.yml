@@ -1,0 +1,7 @@
+---
+- name: Install Virtualbox
+  become: yes
+  package:
+    name:
+      - virtualbox
+    state: present

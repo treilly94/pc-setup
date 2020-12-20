@@ -7,3 +7,6 @@
 
 - name: Setup Docker
   import_tasks: docker.yml
+
+- name: Setup Virtualbox
+  import_tasks: virtualbox.yml
