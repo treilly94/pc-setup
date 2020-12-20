@@ -2,6 +2,9 @@
 - name: Make SSH Directory
   file:
     path: ~/.ssh
+    owner: "{{ lookup('env', 'USER') }}"
+    group: "{{ lookup('env', 'USER') }}"
+    mode: "0700"
     state: directory
 
 - name: Generate an OpenSSH keypair

@@ -3,6 +3,9 @@
   become: yes
   file:
     path: /home/games
+    owner: root
+    group: root
+    mode: "0777"
     state: directory
 
 - name: Mount Games Disk
