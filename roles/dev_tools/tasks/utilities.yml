@@ -1,5 +1,5 @@
 ---
-- name: Install Utilities
+- name: Install Utilities From Apt
   become: yes
   package:
     name:
@@ -7,9 +7,15 @@
       - make
     state: present
 
-- name: Install Utilities from deb
+- name: Install Utilities From Deb
   become: yes
   apt:
     deb: "{{ item }}"
   loop:
     - https://prerelease.keybase.io/keybase_amd64.deb
+
+- name: Install Utilities From Brew
+  homebrew:
+    name:
+      - azure-cli
+    state: present
