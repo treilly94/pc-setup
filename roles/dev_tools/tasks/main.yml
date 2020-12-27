@@ -11,5 +11,8 @@
 - name: Setup Virtualbox
   import_tasks: virtualbox.yml
 
+- name: Setup Python
+  import_tasks: python.yml
+
 - name: Setup Terraform
   import_tasks: terraform.yml

@@ -1,0 +1,7 @@
+---
+- name: Install Python Tools
+  homebrew:
+    name:
+      - pyenv
+      - pipenv
+    state: present
