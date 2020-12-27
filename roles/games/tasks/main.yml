@@ -1,9 +1,11 @@
 ---
 - name: Install Drivers
   import_tasks: drivers.yml
+  when: setup_drivers
 
 - name: Setup Steam
   import_tasks: steam.yml
 
 - name: Games Disk
   import_tasks: disk.yml
+  when: setup_disk
