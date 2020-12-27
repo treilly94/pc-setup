@@ -1,0 +1,14 @@
+---
+- name: Make .nvm Directory
+  file:
+    path: ~/.nvm
+    owner: "{{ lookup('env', 'USER') }}"
+    group: "{{ lookup('env', 'USER') }}"
+    mode: "0700"
+    state: directory
+
+- name: Install NodeJs Tools
+  homebrew:
+    name:
+      - nvm
+    state: present
