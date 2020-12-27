@@ -19,3 +19,9 @@
     name:
       - azure-cli
     state: present
+
+- name: Install Utilities From Snap
+  become: yes
+  community.general.snap:
+    name:
+      - remmina
