@@ -1,8 +1,17 @@
 ---
+- name: Accept Oracle License
+  become: yes
+  debconf:
+    name: virtualbox-ext-pack
+    question: virtualbox-ext-pack/license
+    value: "true"
+    vtype: select
+
 - name: Install Virtualbox
   become: yes
   package:
     name:
       - virtualbox
+      - virtualbox-ext-pack
       - vagrant
     state: present
