@@ -20,6 +20,9 @@
 - name: Setup Java
   import_tasks: java.yml
 
+- name: Setup Go
+  import_tasks: go.yml
+
 - name: Setup Ruby
   import_tasks: ruby.yml
 

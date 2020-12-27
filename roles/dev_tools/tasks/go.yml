@@ -1,0 +1,6 @@
+---
+- name: Install Go Tools
+  homebrew:
+    name:
+      - goenv
+    state: present
