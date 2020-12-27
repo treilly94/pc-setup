@@ -1,0 +1,6 @@
+---
+- name: Install Ruby Tools
+  homebrew:
+    name:
+      - rbenv
+    state: present

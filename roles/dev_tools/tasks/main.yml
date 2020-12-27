@@ -17,5 +17,8 @@
 - name: Setup NodeJs
   import_tasks: nodejs.yml
 
+- name: Setup Ruby
+  import_tasks: ruby.yml
+
 - name: Setup Terraform
   import_tasks: terraform.yml
