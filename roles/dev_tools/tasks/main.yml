@@ -17,6 +17,9 @@
 - name: Setup NodeJs
   import_tasks: nodejs.yml
 
+- name: Setup Java
+  import_tasks: java.yml
+
 - name: Setup Ruby
   import_tasks: ruby.yml
 

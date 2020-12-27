@@ -1,0 +1,6 @@
+---
+- name: Install Java Tools
+  homebrew:
+    name:
+      - jenv
+    state: present
