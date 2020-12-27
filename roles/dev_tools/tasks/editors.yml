@@ -5,4 +5,5 @@
     name:
       - code
       - intellij-idea-community
+      - pycharm-community
     classic: yes
