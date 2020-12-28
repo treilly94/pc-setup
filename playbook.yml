@@ -11,4 +11,5 @@
     - role: security_tools
     - role: games
     - role: media
+    - role: monitoring
     - role: cleanup

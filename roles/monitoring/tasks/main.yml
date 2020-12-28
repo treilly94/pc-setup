@@ -1,0 +1,3 @@
+---
+- name: Setup Telegraf
+  import_tasks: telegraf.yml
