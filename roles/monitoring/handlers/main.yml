@@ -1,5 +1,7 @@
 ---
-- name: Daemon Reload
+- name: Restart Telegraf
   become: yes
   systemd:
+    name: telegraf
+    state: restarted
     daemon_reload: yes
