@@ -28,3 +28,10 @@
   service:
     name: telegraf
     enabled: yes
+
+- name: Add Telegraf User to Docker Group
+  become: true
+  user:
+    name: telegraf
+    groups: docker
+    append: yes
