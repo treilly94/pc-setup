@@ -4,3 +4,6 @@
 
 - name: Setup Password Tools
   import_tasks: password.yml
+
+- name: Setup Metasploit
+  import_tasks: metasploit.yml
