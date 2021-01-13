@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Env
+source ~/.env
+
 # Homebrew
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
