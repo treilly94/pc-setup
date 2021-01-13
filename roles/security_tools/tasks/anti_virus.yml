@@ -1,0 +1,14 @@
+---
+- name: Install Antivirus Software
+  become: yes
+  package:
+    name:
+      - clamav
+      - clamav-daemon
+    state: present
+
+- name: Enable freshclam
+  ansible.builtin.service:
+    name: clamav-freshclam
+    state: started
+    enabled: yes

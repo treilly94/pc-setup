@@ -1,4 +1,7 @@
 ---
+- name: Setup Antivirus
+  import_tasks: anti_virus.yml
+
 - name: Setup Scanning Tools
   import_tasks: scanning.yml
 
