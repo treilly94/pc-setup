@@ -116,7 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Env
+# General
+alias please="sudo"
 source ~/.env
 
 # Homebrew
@@ -129,3 +130,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Influx
 source <(influx completion bash)
+
+# Terraform
+alias tf="terraform"
+complete -C /home/linuxbrew/.linuxbrew/bin/terraform terraform
+complete -C /home/linuxbrew/.linuxbrew/bin/terraform tf
