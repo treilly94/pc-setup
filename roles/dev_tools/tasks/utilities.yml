@@ -19,6 +19,7 @@
   homebrew:
     name:
       - azure-cli
+      - pre-commit
     state: present
 
 - name: Install Utilities From Snap
