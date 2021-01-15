@@ -5,6 +5,7 @@
     name:
       - git
       - make
+      - hashdeep
     state: present
 
 - name: Install Utilities From Deb

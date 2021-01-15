@@ -1,8 +1,17 @@
 ---
-- name: Install Scanning Software
+- name: Install Scanning Software From Package Manager
   become: yes
   package:
     name:
       - nmap
       - wireshark
+      - tshark
+      - yara
+      - p0f
+    state: present
+
+- name: Install Scanning Software From Brew
+  homebrew:
+    name:
+      - snort
     state: present
