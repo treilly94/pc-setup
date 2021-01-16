@@ -12,6 +12,17 @@
     name: "{{ lookup('env', 'USER') }}"
     shell: /usr/bin/zsh
 
+- name: Download OhMyZsh installer
+  get_url:
+    url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+    dest: /tmp/ohmyzsh.sh
+    mode: 0755
+
+- name: Install OhMyZsh
+  command:
+    cmd: /tmp/ohmyzsh.sh --unattended --keep-zshrc
+    creates: ~/.oh-my-zsh
+
 - name: Copy .zshrc
   copy:
     src: files/.zshrc
