@@ -1,6 +1,0 @@
----
-- name: Copy .bashrc
-  copy:
-    src: files/.bashrc
-    dest: ~/.bashrc
-    mode: '0644'
