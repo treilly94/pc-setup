@@ -4,3 +4,9 @@
     name:
       - tfenv
     state: present
+
+- name: Install Terragrunt
+  homebrew:
+    name:
+      - tgenv
+    state: present
