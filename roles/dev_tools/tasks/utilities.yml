@@ -18,6 +18,7 @@
 - name: Install Utilities From Brew
   homebrew:
     name:
+      - awscli
       - azure-cli
       - pre-commit
     state: present

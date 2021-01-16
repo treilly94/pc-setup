@@ -7,7 +7,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
+    aws
     git
+    k
     npm
     nvm
     pipenv
