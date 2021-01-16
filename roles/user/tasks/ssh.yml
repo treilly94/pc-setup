@@ -8,7 +8,6 @@
     state: directory
 
 - name: Generate an OpenSSH keypair
-  become_user: "{{ name }}"
   community.crypto.openssh_keypair:
     path: ~/.ssh/id_rsa
     comment: "{{ email }}"
