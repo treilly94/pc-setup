@@ -15,6 +15,7 @@ plugins=(
     terraform
     vagrant
     zsh-syntax-highlighting
+    zsh-autosuggestions
     )
 
 source $ZSH/oh-my-zsh.sh

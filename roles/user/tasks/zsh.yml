@@ -23,6 +23,15 @@
     cmd: /tmp/ohmyzsh.sh --unattended --keep-zshrc
     creates: ~/.oh-my-zsh
 
+- name: Install Custom Plugins
+  git:
+    repo: "{{ item.url }}"
+    dest: ~/.oh-my-zsh/custom/plugins/{{ item.dir }}
+    version: "{{ item.version }}"
+  loop:
+    - { dir: zsh-syntax-highlighting, url: https://github.com/zsh-users/zsh-syntax-highlighting.git, version: "0.7.1" }
+    - { dir: zsh-autosuggestions, url: https://github.com/zsh-users/zsh-autosuggestions, version: "v0.6.4" }
+
 - name: Copy .zshrc
   copy:
     src: files/.zshrc
