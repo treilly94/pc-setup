@@ -1,12 +1,8 @@
 ---
-- name: Install tfenv
+- name: Install Terraform Tools
   homebrew:
     name:
       - tfenv
-    state: present
-
-- name: Install Terragrunt
-  homebrew:
-    name:
       - tgenv
+      - tflint
     state: present
