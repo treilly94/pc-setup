@@ -6,6 +6,7 @@
       - git
       - make
       - hashdeep
+      - shellcheck
     state: present
 
 - name: Install Utilities From Deb
