@@ -1,0 +1,19 @@
+---
+- name: Add Packer Key
+  become: yes
+  apt_key:
+    url: https://apt.releases.hashicorp.com/gpg
+    state: present
+
+- name: Add Packer Repository
+  become: yes
+  apt_repository:
+    repo: deb [arch=amd64] https://apt.releases.hashicorp.com {{ ansible_facts['lsb']['codename'] }} main
+    state: present
+
+- name: Install Packer
+  become: yes
+  package:
+    name:
+      - packer
+    state: present

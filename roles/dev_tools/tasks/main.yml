@@ -29,5 +29,8 @@
 - name: Setup Terraform
   import_tasks: terraform.yml
 
+- name: Setup Packer
+  import_tasks: packer.yml
+
 - name: Setup Influx
   import_tasks: influx.yml
