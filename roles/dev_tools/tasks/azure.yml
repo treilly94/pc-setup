@@ -1,0 +1,31 @@
+---
+- name: Install the AzCLI
+  homebrew:
+    name:
+      - azure-cli
+    state: present
+
+- name: Install Storage Explorer
+  become: yes
+  community.general.snap:
+    name:
+      - storage-explorer
+
+- name: Add Microsoft Key
+  become: yes
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    state: present
+
+- name: Add Microsoft Repository
+  become: yes
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-{{ codename }}-prod {{ codename }} main
+    state: present
+
+- name: Install Azure Functions
+  become: yes
+  package:
+    name:
+      - azure-functions-core-tools-3
+    state: present

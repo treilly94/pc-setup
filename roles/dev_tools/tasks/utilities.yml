@@ -20,7 +20,6 @@
   homebrew:
     name:
       - awscli
-      - azure-cli
       - pre-commit
     state: present
 
@@ -29,5 +28,4 @@
   community.general.snap:
     name:
       - remmina
-      - storage-explorer
       - postman

@@ -34,3 +34,6 @@
 
 - name: Setup Influx
   import_tasks: influx.yml
+
+- name: Setup Azure
+  import_tasks: azure.yml
