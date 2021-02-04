@@ -33,3 +33,6 @@ export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 # Influx
 source <(influx completion zsh)
+
+# Java
+eval "$(jenv init -)"
