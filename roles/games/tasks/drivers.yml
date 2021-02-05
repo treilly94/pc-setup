@@ -1,9 +1,15 @@
 ---
+- name: Enable 32 bit architecture
+  apt:
+    dpkg_options: '--add-architecture i386 '
+
 # Use the below command to find the recomended driver
 # ubuntu-drivers devices
-- name: Install nividia driver
+- name: Install Drivers
   become: yes
   package:
     name:
-      - nvidia-driver-455
+      - nvidia-driver-450
+      - libvulkan1
+      - libvulkan1:i386
     state: present
