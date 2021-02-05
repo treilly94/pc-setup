@@ -1,0 +1,6 @@
+---
+- name: Install Discord
+  become: yes
+  community.general.snap:
+    name:
+      - discord

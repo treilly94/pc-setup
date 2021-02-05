@@ -1,3 +1,9 @@
 ---
 - name: Setup Signal
   import_tasks: signal.yml
+
+- name: Setup Slack
+  import_tasks: slack.yml
+
+- name: Setup Discord
+  import_tasks: discord.yml
