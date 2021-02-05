@@ -6,6 +6,12 @@
 - name: Setup Steam
   import_tasks: steam.yml
 
+- name: Setup Lutris
+  import_tasks: lutris.yml
+
+- name: Setup Wine
+  import_tasks: wine.yml
+
 - name: Games Disk
   import_tasks: disk.yml
   when: setup_disk

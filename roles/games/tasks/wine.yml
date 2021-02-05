@@ -1,0 +1,19 @@
+---
+- name: Add Wine Key
+  become: yes
+  apt_key:
+    url: https://dl.winehq.org/wine-builds/winehq.key
+    state: present
+
+- name: Add Wine Repository
+  become: yes
+  apt_repository:
+    repo: deb https://dl.winehq.org/wine-builds/ubuntu/ {{ ansible_facts['lsb']['codename'] }} main
+    state: present
+
+- name: Install Wine
+  become: yes
+  package:
+    name:
+      - winehq-stable
+    state: present

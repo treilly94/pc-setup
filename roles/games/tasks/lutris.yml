@@ -1,0 +1,13 @@
+---
+- name: Add Lutris Repository
+  become: yes
+  apt_repository:
+    repo: ppa:lutris-team/lutris
+    state: present
+
+- name: Install Lutris
+  become: yes
+  package:
+    name:
+      - lutris
+    state: present
