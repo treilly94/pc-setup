@@ -26,3 +26,9 @@
     name: "{{ lookup('env', 'USER') }}"
     groups: docker
     append: yes
+
+- name: Install Hadolint
+  homebrew:
+    name:
+      - hadolint
+    state: present
