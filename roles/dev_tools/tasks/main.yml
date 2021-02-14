@@ -37,3 +37,6 @@
 
 - name: Setup Azure
   import_tasks: azure.yml
+
+- name: Setup Sonar
+  import_tasks: sonar.yml
