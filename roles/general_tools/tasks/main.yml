@@ -7,3 +7,6 @@
 
 - name: Setup Discord
   import_tasks: discord.yml
+
+- name: Setup Authy
+  import_tasks: authy.yml
