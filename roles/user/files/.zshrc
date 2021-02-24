@@ -9,7 +9,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
     aws
     git
-    k
+    kubectl
     npm
     nvm
     pipenv
