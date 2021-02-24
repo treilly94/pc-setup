@@ -40,3 +40,6 @@
 
 - name: Setup Sonar
   import_tasks: sonar.yml
+
+- name: Setup Etcher
+  import_tasks: etcher.yml

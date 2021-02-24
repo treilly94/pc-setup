@@ -1,0 +1,19 @@
+---
+- name: Add Etcher Key
+  become: yes
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 379CE192D401AB61
+
+- name: Add Etcher Repository
+  become: yes
+  apt_repository:
+    repo: deb https://deb.etcher.io stable etcher
+    state: present
+
+- name: Install Etcher
+  become: yes
+  package:
+    name:
+      - balena-etcher-electron
+    state: present
