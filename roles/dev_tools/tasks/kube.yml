@@ -1,0 +1,6 @@
+---
+- name: Install kubectl
+  homebrew:
+    name:
+      - kubectl
+    state: present

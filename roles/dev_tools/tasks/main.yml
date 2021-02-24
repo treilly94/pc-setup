@@ -43,3 +43,6 @@
 
 - name: Setup Etcher
   import_tasks: etcher.yml
+
+- name: Setup Kube
+  import_tasks: kube.yml
