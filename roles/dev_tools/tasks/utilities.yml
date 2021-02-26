@@ -8,6 +8,7 @@
       - hashdeep
       - shellcheck
       - vim
+      - openvpn
     state: present
 
 - name: Install Utilities From Deb
