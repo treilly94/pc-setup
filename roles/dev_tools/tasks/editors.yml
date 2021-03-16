@@ -6,4 +6,5 @@
       - code
       - intellij-idea-community
       - pycharm-community
+      - kontena-lens
     classic: yes
