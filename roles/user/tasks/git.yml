@@ -5,7 +5,7 @@
     scope: global
     value: "{{ item.value }}"
   loop:
-    - { key: user.name, value: "{{ lookup('env', 'USER') }}" }
+    - { key: user.name, value: "{{ user }}" }
     - { key: user.email, value: "{{ email }}" }
     - { key: commit.gpgsign, value: true }
     - { key: user.signingkey, value: "{{ email }}" }

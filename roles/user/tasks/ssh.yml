@@ -2,8 +2,8 @@
 - name: Make SSH Directory
   file:
     path: ~/.ssh
-    owner: "{{ lookup('env', 'USER') }}"
-    group: "{{ lookup('env', 'USER') }}"
+    owner: "{{ user }}"
+    group: "{{ user }}"
     mode: "0700"
     state: directory
 

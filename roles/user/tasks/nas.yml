@@ -1,0 +1,37 @@
+---
+- name: Install Cifs
+  become: yes
+  package:
+    name:
+      - cifs-utils
+    state: present
+
+- name: Make Credentials File
+  file:
+    path: "{{ cifs_credentials }}"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0700"
+    state: touch
+
+- name: Make Shared Directory
+  file:
+    path: "{{ shared_folder }}"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0700"
+    state: directory
+
+- name: Get user info
+  getent:
+    database: passwd
+    key: "{{ user }}"
+
+- name: Mount Home from NAS
+  become: true
+  mount:
+    path: "{{ shared_folder }}"
+    src: //home-nas/home/
+    fstype: cifs
+    opts: nofail,credentials={{ cifs_credentials }},uid={{ getent_passwd[user].1 }},gid={{ getent_passwd[user].2 }},dir_mode=0700,file_mode=0700
+    state: present

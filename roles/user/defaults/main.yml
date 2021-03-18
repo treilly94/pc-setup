@@ -1,2 +1,5 @@
 ---
 email:
+user: "{{ lookup('env', 'USER') }}"
+shared_folder: /home/{{ lookup('env', 'USER') }}/Shared
+cifs_credentials: /home/{{ lookup('env', 'USER') }}/.cifs

@@ -9,7 +9,7 @@
 - name: Change Default Shell to Zsh
   become: true
   user:
-    name: "{{ lookup('env', 'USER') }}"
+    name: "{{ user }}"
     shell: /usr/bin/zsh
 
 - name: Download OhMyZsh installer

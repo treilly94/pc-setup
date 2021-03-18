@@ -7,3 +7,6 @@
 
 - name: Setup Zsh
   import_tasks: zsh.yml
+
+- name: Setup NAS
+  import_tasks: nas.yml
