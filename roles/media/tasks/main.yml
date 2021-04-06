@@ -4,3 +4,6 @@
 
 - name: Setup VLC
   import_tasks: vlc.yml
+
+- name: Setup Photo Editing Software
+  import_tasks: photo_editing.yml

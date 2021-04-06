@@ -1,0 +1,13 @@
+---
+- name: Install Gimp
+  become: yes
+  community.general.snap:
+    name:
+      - gimp
+
+- name: Install RawTherapee
+  become: yes
+  package:
+    name:
+      - rawtherapee
+    state: present
