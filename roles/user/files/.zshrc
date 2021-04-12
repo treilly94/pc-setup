@@ -36,3 +36,6 @@ source <(influx completion zsh)
 
 # Java
 eval "$(jenv init -)"
+
+# Flux
+command -v flux >/dev/null && . <(flux completion zsh) && compdef _flux flux

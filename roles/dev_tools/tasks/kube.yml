@@ -4,3 +4,9 @@
     name:
       - kubectl
     state: present
+
+- name: Install FluxCD
+  homebrew:
+    name:
+      - fluxcd/tap/flux
+    state: present
