@@ -10,3 +10,9 @@
     name:
       - fluxcd/tap/flux
     state: present
+
+- name: Install Kubeseal
+  homebrew:
+    name:
+      - kubeseal
+    state: present
