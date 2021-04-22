@@ -8,6 +8,7 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
     aws
+    gcloud
     git
     kubectl
     npm

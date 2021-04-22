@@ -46,3 +46,6 @@
 
 - name: Setup Kube
   import_tasks: kube.yml
+
+- name: Setup Gcloud
+  import_tasks: gcloud.yml
