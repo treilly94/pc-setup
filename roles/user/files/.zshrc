@@ -40,3 +40,6 @@ eval "$(jenv init -)"
 
 # Flux
 command -v flux >/dev/null && . <(flux completion zsh) && compdef _flux flux
+
+# Eksctl
+command -v eksctl >/dev/null && . <(eksctl completion zsh) && compdef _eksctl eksctl

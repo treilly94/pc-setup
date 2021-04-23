@@ -16,3 +16,9 @@
     name:
       - kubeseal
     state: present
+
+- name: Install eksctl
+  homebrew:
+    name:
+      - weaveworks/tap/eksctl
+    state: present
