@@ -3,6 +3,7 @@
   homebrew:
     name:
       - kubectl
+      - krew
     state: present
 
 - name: Install FluxCD
