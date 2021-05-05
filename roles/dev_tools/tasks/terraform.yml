@@ -5,4 +5,5 @@
       - tfenv
       - tgenv
       - tflint
+      - tfsec
     state: present
