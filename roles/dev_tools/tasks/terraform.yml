@@ -6,4 +6,5 @@
       - tgenv
       - tflint
       - tfsec
+      - checkov
     state: present
