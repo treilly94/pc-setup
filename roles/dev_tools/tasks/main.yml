@@ -32,6 +32,9 @@
 - name: Setup Packer
   import_tasks: packer.yml
 
+- name: Setup Boundry
+  import_tasks: boundry.yml
+
 - name: Setup Influx
   import_tasks: influx.yml
 

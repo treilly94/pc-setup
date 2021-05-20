@@ -1,0 +1,19 @@
+---
+- name: Add Boundry Key
+  become: yes
+  apt_key:
+    url: https://apt.releases.hashicorp.com/gpg
+    state: present
+
+- name: Add Boundry Repository
+  become: yes
+  apt_repository:
+    repo: deb [arch=amd64] https://apt.releases.hashicorp.com {{ ansible_facts['lsb']['codename'] }} main
+    state: present
+
+- name: Install Boundry
+  become: yes
+  package:
+    name:
+      - boundary
+    state: present
