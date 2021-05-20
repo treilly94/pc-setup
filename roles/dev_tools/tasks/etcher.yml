@@ -2,13 +2,13 @@
 - name: Add Etcher Key
   become: yes
   apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: 379CE192D401AB61
+    url: https://dl.cloudsmith.io/public/balena/etcher/gpg.70528471AFF9A051.key
+    state: present
 
 - name: Add Etcher Repository
   become: yes
   apt_repository:
-    repo: deb https://deb.etcher.io stable etcher
+    repo: deb https://dl.cloudsmith.io/public/balena/etcher/deb/ubuntu bionic main
     state: present
 
 - name: Install Etcher
