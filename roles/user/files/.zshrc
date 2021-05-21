@@ -10,6 +10,7 @@ plugins=(
     aws
     gcloud
     git
+    helm
     kubectl
     npm
     nvm
