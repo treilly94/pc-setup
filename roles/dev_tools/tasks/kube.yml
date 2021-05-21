@@ -4,6 +4,7 @@
     name:
       - kubectl
       - krew
+      - helm
     state: present
 
 - name: Install FluxCD
