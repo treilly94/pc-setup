@@ -7,4 +7,5 @@
       - tflint
       - tfsec
       - checkov
+      - infracost
     state: present
