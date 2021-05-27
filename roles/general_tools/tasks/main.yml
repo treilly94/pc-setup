@@ -10,3 +10,6 @@
 
 - name: Setup Authy
   import_tasks: authy.yml
+
+- name: Setup Books
+  import_tasks: books.yml

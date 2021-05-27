@@ -1,0 +1,7 @@
+---
+- name: Install Book Apps
+  become: yes
+  package:
+    name:
+      - calibre
+    state: present
