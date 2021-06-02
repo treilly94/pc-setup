@@ -13,3 +13,6 @@
 
 - name: Setup Books
   import_tasks: books.yml
+
+- name: Setup Office
+  import_tasks: office.yml
