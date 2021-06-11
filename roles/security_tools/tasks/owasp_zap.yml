@@ -1,0 +1,19 @@
+---
+- name: Add ZAP Key
+  become: yes
+  apt_key:
+    url: https://download.opensuse.org/repositories/home:cabelo/xUbuntu_18.10/Release.key
+    state: present
+
+- name: Add ZAP Repository
+  become: yes
+  apt_repository:
+    repo: deb http://download.opensuse.org/repositories/home:/cabelo/xUbuntu_18.10/ /
+    state: present
+
+- name: Install ZAP
+  become: yes
+  package:
+    name:
+      - owasp-zap
+    state: present

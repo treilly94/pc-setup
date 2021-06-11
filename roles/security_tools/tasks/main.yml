@@ -10,3 +10,6 @@
 
 - name: Setup Metasploit
   import_tasks: metasploit.yml
+
+- name: Setup ZAP
+  import_tasks: owasp_zap.yml
