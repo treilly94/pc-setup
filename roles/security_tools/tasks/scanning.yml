@@ -8,6 +8,7 @@
       - tshark
       - yara
       - p0f
+      - sqlmap
     state: present
 
 - name: Install Scanning Software From Brew
