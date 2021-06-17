@@ -23,6 +23,7 @@
     name:
       - awscli
       - pre-commit
+      - serverless
     state: present
 
 - name: Install Utilities From Snap
