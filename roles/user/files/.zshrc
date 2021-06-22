@@ -15,6 +15,7 @@ plugins=(
     npm
     nvm
     pipenv
+    poetry
     sudo
     terraform
     vagrant

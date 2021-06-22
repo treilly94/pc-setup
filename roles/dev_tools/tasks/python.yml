@@ -4,4 +4,27 @@
     name:
       - pyenv
       - pipenv
+      - poetry
     state: present
+
+- name: Get poetry zsh plugin
+  command:
+    cmd: poetry completions zsh
+    creates: ~/.oh-my-zsh/custom/plugins/poetry/_poetry
+  register: poetry_zsh
+
+- name: Make poetry plugin directory
+  file:
+    path: ~/.oh-my-zsh/custom/plugins/poetry/
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0700"
+    state: directory
+
+- name: Write poetry plugin
+  copy:
+    dest: ~/.oh-my-zsh/custom/plugins/poetry/_poetry
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0700"
+    content: "{{ poetry_zsh.stdout }}"
