@@ -7,6 +7,12 @@
     mode: "0700"
     state: directory
 
+- name: Copy SSH Config
+  copy:
+    src: files/ssh-config
+    dest: ~/.ssh/config
+    mode: '0600'
+
 - name: Generate an OpenSSH keypair
   community.crypto.openssh_keypair:
     path: ~/.ssh/id_rsa
