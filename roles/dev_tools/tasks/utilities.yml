@@ -22,6 +22,7 @@
   homebrew:
     name:
       - awscli
+      - asdf
       - pre-commit
       - serverless
     state: present
