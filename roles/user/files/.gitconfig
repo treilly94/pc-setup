@@ -1,0 +1,6 @@
+[include]
+	path = ~/git-personal.conf
+[includeIf "gitdir:~/Documents/infogrid/"]
+	path = ~/git-infogrid.conf
+[commit]
+	gpgsign = True

@@ -1,11 +1,18 @@
 ---
-- name: Global GIT Config
-  git_config:
-    name: "{{ item.key }}"
-    scope: global
-    value: "{{ item.value }}"
-  loop:
-    - { key: user.name, value: "{{ user }}" }
-    - { key: user.email, value: "{{ email }}" }
-    - { key: commit.gpgsign, value: true }
-    - { key: user.signingkey, value: "{{ email }}" }
+- name: Copy .gitconfig
+  copy:
+    src: files/.gitconfig
+    dest: ~/.gitconfig
+    mode: '0644'
+
+- name: Copy git-personal.conf
+  copy:
+    src: files/git-personal.conf
+    dest: ~/git-personal.conf
+    mode: '0644'
+
+- name: Copy git-infogrid.conf
+  copy:
+    src: files/git-infogrid.conf
+    dest: ~/git-infogrid.conf
+    mode: '0644'
