@@ -5,6 +5,7 @@
       - tfenv
       - tgenv
       - tflint
+      - terraform-docs
       - tfsec
       - checkov
       - infracost
