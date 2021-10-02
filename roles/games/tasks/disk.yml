@@ -12,6 +12,6 @@
   become: yes
   mount:
     path: /home/games
-    src: LABEL=games
-    fstype: ntfs
+    src: LABEL=games-ssd
+    fstype: ext4
     state: present
