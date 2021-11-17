@@ -3,4 +3,5 @@
   homebrew:
     name:
       - goenv
+      - golangci-lint
     state: present
