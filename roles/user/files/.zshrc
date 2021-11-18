@@ -11,6 +11,7 @@ plugins=(
     aws
     gcloud
     git
+    golang
     helm
     kubectl
     npm
@@ -49,3 +50,6 @@ command -v eksctl >/dev/null && . <(eksctl completion zsh) && compdef _eksctl ek
 
 # Krew
 export PATH="${PATH}:${HOME}/.krew/bin"
+
+# GO
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
