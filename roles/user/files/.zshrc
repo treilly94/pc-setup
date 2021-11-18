@@ -52,4 +52,4 @@ command -v eksctl >/dev/null && . <(eksctl completion zsh) && compdef _eksctl ek
 export PATH="${PATH}:${HOME}/.krew/bin"
 
 # GO
-export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=/home/$USER/go/bin:$PATH
