@@ -33,3 +33,10 @@
     name:
       - remmina
       - postman
+
+- name: Install Utilities From Snap Classic
+  become: yes
+  community.general.snap:
+    classic: yes
+    name:
+      - heroku
