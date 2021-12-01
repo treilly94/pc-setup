@@ -53,3 +53,6 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 
 # GO
 export PATH=/home/$USER/go/bin:$PATH
+
+# Heroku
+HEROKU_AC_ZSH_SETUP_PATH=/home/tom/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
